@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Send SMS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            margin-top: 10px;
+            display: block;
+            font-weight: bold;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+        }
+        button {
+            padding: 10px 15px;
+            margin-top: 10px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Send SMS</h1>
+    <form action="send_sms.php" method="post">
+        <label for="phone_numbers">Phone Numbers (one per line):</label>
+        <textarea id="phone_numbers" name="phone_numbers" placeholder="1234567890&#10;0987654321"></textarea>
+
+        <label for="carrier">Carrier:</label>
+        <select id="carrier" name="carrier">
+            <option value="att">AT&T</option>
+            <option value="tmobile">T-Mobile</option>
+            <option value="verizon">Verizon</option>
+            <option value="sprint">Sprint</option>
+        </select>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Enter your message here..."></textarea>
+
+        <button type="submit">Send SMS</button>
+    </form>
+</body>
+</html>

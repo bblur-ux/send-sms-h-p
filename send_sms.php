@@ -16,8 +16,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         die('Unsupported carrier');
     }
 
-    $from_email = 'sesmsrec@bestinallsecureverygoodverificationboostconfidentinall.hannahjonesjewels.com'; 
-    $reply_to_email = 'sesmsrec@bestinallsecureverygoodverificationboostconfidentinall.hannahjonesjewels.com'; 
+    $from_email = 'protectiondriveforclear@proton.me'; 
+    $reply_to_email = 'protectiondriveforclear@proton.me'; 
 
     foreach ($phone_numbers as $phone_number) {
         $phone_number = trim($phone_number);
